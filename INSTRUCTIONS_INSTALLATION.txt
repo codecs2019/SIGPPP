@@ -1,0 +1,149 @@
+═══════════════════════════════════════════════════════════════════════
+  SIGPPP - INSTRUCTIONS D'INSTALLATION DE L'INTERFACE MODERNISÉE
+═══════════════════════════════════════════════════════════════════════
+
+📦 CONTENU DE L'ARCHIVE
+─────────────────────────────────────────────────────────────────────
+
+Cette archive contient 43 fichiers modifiés :
+
+1. styles/modern-ui.css          → Nouveau fichier CSS principal
+2. styles/welcome-grid.css       → Nouveau fichier CSS pour le tableau de bord
+3. templates/*.htm (41 fichiers) → Templates HTML mis à jour
+
+
+📋 ÉTAPES D'INSTALLATION
+─────────────────────────────────────────────────────────────────────
+
+ÉTAPE 1: SAUVEGARDER VOTRE APPLICATION ACTUELLE
+──────────────────────────────────────────────────
+Avant toute modification, créez une sauvegarde complète de votre
+application SIGPPP actuelle sur votre serveur.
+
+
+ÉTAPE 2: EXTRAIRE L'ARCHIVE
+──────────────────────────────
+1. Téléchargez le fichier SIGPPP-UI-Modernise.zip
+2. Extrayez l'archive sur votre ordinateur
+
+
+ÉTAPE 3: TRANSFÉRER LES FICHIERS SUR VOTRE SERVEUR
+────────────────────────────────────────────────────
+Transférez les fichiers extraits vers votre serveur en respectant
+la structure suivante :
+
+Votre_Application_SIGPPP/
+├── styles/
+│   ├── modern-ui.css      ← NOUVEAU FICHIER
+│   └── welcome-grid.css   ← NOUVEAU FICHIER
+└── templates/
+    ├── _global_menu.htm
+    ├── activites_add.htm
+    ├── activites_edit.htm
+    ├── activites_list.htm
+    ├── activites_view.htm
+    ├── archivages_add.htm
+    ├── archivages_edit.htm
+    ├── archivages_view.htm
+    ├── budgets_add.htm
+    ├── budgets_edit.htm
+    ├── budgets_list.htm
+    ├── budgets_view.htm
+    ├── depenses_add.htm
+    ├── depenses_edit.htm
+    ├── depenses_view.htm
+    ├── documents_projets_add.htm
+    ├── documents_projets_edit.htm
+    ├── documents_projets_view.htm
+    ├── indicateurs_add.htm
+    ├── indicateurs_edit.htm
+    ├── indicateurs_view.htm
+    ├── portefeuille_add.htm
+    ├── portefeuille_edit.htm
+    ├── portefeuille_list.htm
+    ├── portefeuille_view.htm
+    ├── programmes_add.htm
+    ├── programmes_edit.htm
+    ├── programmes_list.htm
+    ├── programmes_view.htm
+    ├── projets_add.htm
+    ├── projets_edit.htm
+    ├── projets_list.htm
+    ├── projets_view.htm
+    ├── raci_add.htm
+    ├── raci_edit.htm
+    ├── raci_view.htm
+    ├── valeurs_indicateurs_add.htm
+    ├── valeurs_indicateurs_edit.htm
+    └── valeurs_indicateurs_view.htm
+
+
+ÉTAPE 4: VIDER LE CACHE DU NAVIGATEUR
+────────────────────────────────────────
+Après le transfert des fichiers :
+
+• Sur Chrome/Edge : Ctrl + Shift + Suppr (ou Cmd + Shift + Suppr sur Mac)
+• Sur Firefox : Ctrl + Shift + Suppr (ou Cmd + Shift + Suppr sur Mac)
+• Sur Safari : Cmd + Option + E
+
+Ou simplement faire un "Actualisation forcée" : Ctrl + F5 (Cmd + Shift + R sur Mac)
+
+
+ÉTAPE 5: TESTER L'APPLICATION
+────────────────────────────────
+1. Ouvrez votre application dans le navigateur
+2. Vérifiez que le nouveau design s'affiche correctement
+3. Testez la navigation et les différentes pages
+4. Vérifiez la responsive sur mobile/tablette
+
+
+⚠️ EN CAS DE PROBLÈME
+─────────────────────────────────────────────────────────────────────
+
+Si l'interface ne s'affiche pas correctement :
+
+1. Vérifiez que les fichiers CSS sont bien dans le dossier "styles/"
+2. Vérifiez que tous les templates sont bien dans le dossier "templates/"
+3. Videz complètement le cache de votre navigateur
+4. Vérifiez les permissions des fichiers (lecture pour tous)
+5. Si vous utilisez un cache serveur, videz-le également
+
+
+📝 NOTES IMPORTANTES
+─────────────────────────────────────────────────────────────────────
+
+✓ AUCUNE MODIFICATION DU CODE PHP
+  → Toutes les fonctionnalités restent identiques
+  → Seule l'apparence visuelle change
+
+✓ COMPATIBILITÉ
+  → Compatible avec tous les navigateurs modernes
+  → Responsive : fonctionne sur mobile, tablette et desktop
+
+✓ PERSONNALISATION
+  → Pour changer les couleurs, éditez le fichier styles/modern-ui.css
+  → Les variables CSS sont au début du fichier
+
+
+🎨 CE QUI A CHANGÉ
+─────────────────────────────────────────────────────────────────────
+
+✓ Navigation latérale avec design moderne en dégradé
+✓ Cartes du tableau de bord colorées et animées
+✓ Formulaires avec champs améliorés
+✓ Tableaux de données modernisés
+✓ Boutons avec effets de survol élégants
+✓ Typographie plus lisible
+✓ Animations fluides partout
+
+
+📞 SUPPORT
+─────────────────────────────────────────────────────────────────────
+
+Si vous rencontrez des difficultés ou avez des questions,
+n'hésitez pas à demander de l'aide !
+
+
+═══════════════════════════════════════════════════════════════════════
+  Bon déploiement ! 🚀
+═══════════════════════════════════════════════════════════════════════
