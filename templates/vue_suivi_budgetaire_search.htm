@@ -1,0 +1,370 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel vue_suivi_budgetaire search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN annee_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_annee}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="annee{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="annee" data-fieldname="annee" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_annee}">
+		{$label vue_suivi_budgetaire annee }	</label>
+	<div class="r-search-option">
+		{$searchtype_annee}
+	</div>
+	<div class="r-search-field">
+		{$annee_editcontrol}	</div>
+	<div class="r-search-field">
+		{$annee_editcontrol1}
+	</div>
+	
+</div>
+
+{END annee_fieldblock}
+											
+{BEGIN code_projet_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_code_projet}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="code_projet{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="code_projet" data-fieldname="code_projet" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_code_projet}">
+		{$label vue_suivi_budgetaire code_projet }	</label>
+	<div class="r-search-option">
+		{$searchtype_code_projet}
+	</div>
+	<div class="r-search-field">
+		{$code_projet_editcontrol}	</div>
+	<div class="r-search-field">
+		{$code_projet_editcontrol1}
+	</div>
+	
+</div>
+
+{END code_projet_fieldblock}
+											
+{BEGIN montant_engage_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_montant_engage}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="montant_engage{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="montant_engage" data-fieldname="montant_engage" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_montant_engage}">
+		{$label vue_suivi_budgetaire montant_engage }	</label>
+	<div class="r-search-option">
+		{$searchtype_montant_engage}
+	</div>
+	<div class="r-search-field">
+		{$montant_engage_editcontrol}	</div>
+	<div class="r-search-field">
+		{$montant_engage_editcontrol1}
+	</div>
+	
+</div>
+
+{END montant_engage_fieldblock}
+											
+{BEGIN montant_paye_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_montant_paye}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="montant_paye{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="montant_paye" data-fieldname="montant_paye" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_montant_paye}">
+		{$label vue_suivi_budgetaire montant_paye }	</label>
+	<div class="r-search-option">
+		{$searchtype_montant_paye}
+	</div>
+	<div class="r-search-field">
+		{$montant_paye_editcontrol}	</div>
+	<div class="r-search-field">
+		{$montant_paye_editcontrol1}
+	</div>
+	
+</div>
+
+{END montant_paye_fieldblock}
+											
+{BEGIN montant_prevu_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_montant_prevu}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="montant_prevu{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="montant_prevu" data-fieldname="montant_prevu" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_montant_prevu}">
+		{$label vue_suivi_budgetaire montant_prevu }	</label>
+	<div class="r-search-option">
+		{$searchtype_montant_prevu}
+	</div>
+	<div class="r-search-field">
+		{$montant_prevu_editcontrol}	</div>
+	<div class="r-search-field">
+		{$montant_prevu_editcontrol1}
+	</div>
+	
+</div>
+
+{END montant_prevu_fieldblock}
+											
+{BEGIN programme_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_programme}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="programme{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="programme" data-fieldname="programme" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_programme}">
+		{$label vue_suivi_budgetaire programme }	</label>
+	<div class="r-search-option">
+		{$searchtype_programme}
+	</div>
+	<div class="r-search-field">
+		{$programme_editcontrol}	</div>
+	<div class="r-search-field">
+		{$programme_editcontrol1}
+	</div>
+	
+</div>
+
+{END programme_fieldblock}
+											
+{BEGIN projet_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_projet}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="projet{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="projet" data-fieldname="projet" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_projet}">
+		{$label vue_suivi_budgetaire projet }	</label>
+	<div class="r-search-option">
+		{$searchtype_projet}
+	</div>
+	<div class="r-search-field">
+		{$projet_editcontrol}	</div>
+	<div class="r-search-field">
+		{$projet_editcontrol1}
+	</div>
+	
+</div>
+
+{END projet_fieldblock}
+											
+{BEGIN projet_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_projet_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="projet_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="projet_id" data-fieldname="projet_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_projet_id}">
+		{$label vue_suivi_budgetaire projet_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_projet_id}
+	</div>
+	<div class="r-search-field">
+		{$projet_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$projet_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END projet_id_fieldblock}
+											
+{BEGIN source_financement_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_source_financement}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="source_financement{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="source_financement" data-fieldname="source_financement" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_source_financement}">
+		{$label vue_suivi_budgetaire source_financement }	</label>
+	<div class="r-search-option">
+		{$searchtype_source_financement}
+	</div>
+	<div class="r-search-field">
+		{$source_financement_editcontrol}	</div>
+	<div class="r-search-field">
+		{$source_financement_editcontrol1}
+	</div>
+	
+</div>
+
+{END source_financement_fieldblock}
+											
+{BEGIN taux_execution_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_taux_execution}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="taux_execution{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="taux_execution" data-fieldname="taux_execution" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_taux_execution}">
+		{$label vue_suivi_budgetaire taux_execution }	</label>
+	<div class="r-search-option">
+		{$searchtype_taux_execution}
+	</div>
+	<div class="r-search-field">
+		{$taux_execution_editcontrol}	</div>
+	<div class="r-search-field">
+		{$taux_execution_editcontrol1}
+	</div>
+	
+</div>
+
+{END taux_execution_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} data-page=undefined >
+							Rechercher			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Remettre			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Retour à la liste			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Annuler			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

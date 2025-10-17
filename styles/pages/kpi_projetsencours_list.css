@@ -1,0 +1,15 @@
+[data-cellid="grid_cell_field"][data-page="kpi_projetsencours_list"][data-cellid="grid_cell_field"][data-page="kpi_projetsencours_list"][data-cellid="grid_cell_field"][data-page="kpi_projetsencours_list"] {
+  background-color: #fcfafa;
+  border: none;
+}
+[data-cellid="grid_footcell_field"][data-page="kpi_projetsencours_list"][data-cellid="grid_footcell_field"][data-page="kpi_projetsencours_list"][data-cellid="grid_footcell_field"][data-page="kpi_projetsencours_list"] {
+  white-space: nowrap;
+}
+[data-cellid="grid_headcell_checkbox"][data-page="kpi_projetsencours_list"][data-cellid="grid_headcell_checkbox"][data-page="kpi_projetsencours_list"][data-cellid="grid_headcell_checkbox"][data-page="kpi_projetsencours_list"] {
+  width: 30px;
+}
+[data-page="kpi_projetsencours_list"][data-itemid="page_image_ash8f23hr"] {
+  width: 400px;
+}
+
+

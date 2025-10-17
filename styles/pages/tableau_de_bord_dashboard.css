@@ -1,0 +1,121 @@
+[data-cellid="grid_c1"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c1"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c1"][data-page="tableau_de_bord_dashboard"] {
+  width: 100px;
+}
+[data-cellid="grid_c"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c"][data-page="tableau_de_bord_dashboard"] {
+  width: 100px;
+}
+[data-cellid="grid_c2"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c2"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c2"][data-page="tableau_de_bord_dashboard"] {
+  width: 100px;
+}
+[data-cellid="grid_c3"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c3"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c3"][data-page="tableau_de_bord_dashboard"] {
+  width: 100px;
+}
+[data-cellid="grid_c4"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c4"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c4"][data-page="tableau_de_bord_dashboard"] {
+  width: 100px;
+}
+[data-cellid="grid_c5"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c5"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c5"][data-page="tableau_de_bord_dashboard"] {
+  width: 100px;
+}
+[data-cellid="grid_c6"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c6"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c6"][data-page="tableau_de_bord_dashboard"] {
+  width: 100px;
+}
+[data-cellid="grid_c7"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c7"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c7"][data-page="tableau_de_bord_dashboard"] {
+  width: 100px;
+}
+[data-cellid="grid_c12"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c12"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c12"][data-page="tableau_de_bord_dashboard"] {
+  width: 100px;
+}
+[data-cellid="grid_c13"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c13"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c13"][data-page="tableau_de_bord_dashboard"] {
+  width: 100px;
+}
+[data-cellid="grid_c14"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c14"][data-page="tableau_de_bord_dashboard"][data-cellid="grid_c14"][data-page="tableau_de_bord_dashboard"] {
+  width: 100px;
+}
+[data-page="tableau_de_bord_dashboard"][data-itemid="dashboard-item"] {
+  height: 130px;
+}
+[data-page="tableau_de_bord_dashboard"][data-itemid="dashboard-item1"] {
+  height: 130px;
+}
+[data-page="tableau_de_bord_dashboard"][data-itemid="dashboard-item2"] {
+  height: 130px;
+}
+[data-page="tableau_de_bord_dashboard"][data-itemid="dashboard-item3"] {
+  height: 130px;
+}
+[data-page="tableau_de_bord_dashboard"][data-itemid="dashboard-item4"] {
+  height: 130px;
+}
+[data-page="tableau_de_bord_dashboard"][data-itemid="dashboard-item5"] {
+  height: 130px;
+}
+[data-page="tableau_de_bord_dashboard"][data-itemid="dashboard-item6"] {
+  height: 130px;
+}
+[data-page="tableau_de_bord_dashboard"][data-itemid="dashboard-item7"] {
+  height: 130px;
+}
+[data-page="tableau_de_bord_dashboard"][data-itemid="dashboard-item8"] {
+  height: 130px;
+}
+[data-page="tableau_de_bord_dashboard"][data-itemid="dashboard-item9"] {
+  height: 130px;
+}
+[data-page="tableau_de_bord_dashboard"][data-itemid="dashboard-item10"] {
+  height: 130px;
+}
+[data-page="tableau_de_bord_dashboard"][data-itemid="page_image_ash8f23hr"] {
+  width: 400px;
+}
+
+/* --- STYLE GLOBAL DU DASHBOARD --- */
+.dashboard-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* --- STYLE DES CARTES KPI --- */
+.dashboard-card {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  width: 220px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.dashboard-card:hover {
+  transform: scale(1.05);
+}
+
+/* --- COULEURS DES STATUTS --- */
+.kpi-encours {
+  border-top: 6px solid #2e7d32;
+}
+.kpi-termine {
+  border-top: 6px solid #1565c0;
+}
+.kpi-retard {
+  border-top: 6px solid #ef6c00;
+}
+.kpi-budget {
+  border-top: 6px solid #c62828;
+}
+
+/* --- TITRE & VALEUR --- */
+.dashboard-card h4 {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.dashboard-card h2 {
+  font-size: 28px;
+  margin: 0;
+  font-weight: bold;
+}
+

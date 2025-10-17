@@ -1,0 +1,474 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-edit" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel Projets edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Retour à la liste</button>
+	{END message_back_button}
+{BEGIN message_view_page_button}
+		<a class="btn btn-sm btn-default" href="projets_view.php?{$editlink}" {$view_page_button_attrs}>Afficher</a>
+{END message_view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN categorie_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_categorie}  r-vertical-field" 
+	data-signal-error-for="categorie{$id}" {$required_attr_categorie}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="categorie" data-fieldname="categorie" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_categorie}">
+		{BEGIN categorie_label}{$label Projets categorie }{END categorie_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$categorie_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="categorie" {$tooltipAttr Projets categorie } >
+		<div class="text-muted" >
+		{$tooltip Projets categorie }		</div>
+	</div>
+</div>
+
+
+{END categorie_fieldblock}
+											
+{BEGIN chef_projet_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_chef_projet_id}  r-vertical-field" 
+	data-signal-error-for="chef_projet_id{$id}" {$required_attr_chef_projet_id}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="chef_projet_id" data-fieldname="chef_projet_id" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_chef_projet_id}">
+		{BEGIN chef_projet_id_label}{$label Projets chef_projet_id }{END chef_projet_id_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$chef_projet_id_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="chef_projet_id" {$tooltipAttr Projets chef_projet_id } >
+		<div class="text-muted" >
+		{$tooltip Projets chef_projet_id }		</div>
+	</div>
+</div>
+
+
+{END chef_projet_id_fieldblock}
+											
+{BEGIN code_projet_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_code_projet}  r-vertical-field" 
+	data-signal-error-for="code_projet{$id}" {$required_attr_code_projet}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="code_projet" data-fieldname="code_projet" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_code_projet}">
+		{BEGIN code_projet_label}{$label Projets code_projet }{END code_projet_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$code_projet_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="code_projet" {$tooltipAttr Projets code_projet } >
+		<div class="text-muted" >
+		{$tooltip Projets code_projet }		</div>
+	</div>
+</div>
+
+
+{END code_projet_fieldblock}
+											
+{BEGIN date_debut_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_debut}  r-vertical-field" 
+	data-signal-error-for="date_debut{$id}" {$required_attr_date_debut}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="date_debut" data-fieldname="date_debut" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_date_debut}">
+		{BEGIN date_debut_label}{$label Projets date_debut }{END date_debut_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$date_debut_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="date_debut" {$tooltipAttr Projets date_debut } >
+		<div class="text-muted" >
+		{$tooltip Projets date_debut }		</div>
+	</div>
+</div>
+
+
+{END date_debut_fieldblock}
+											
+{BEGIN date_fin_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_fin}  r-vertical-field" 
+	data-signal-error-for="date_fin{$id}" {$required_attr_date_fin}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="date_fin" data-fieldname="date_fin" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_date_fin}">
+		{BEGIN date_fin_label}{$label Projets date_fin }{END date_fin_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$date_fin_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="date_fin" {$tooltipAttr Projets date_fin } >
+		<div class="text-muted" >
+		{$tooltip Projets date_fin }		</div>
+	</div>
+</div>
+
+
+{END date_fin_fieldblock}
+											
+{BEGIN description_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_description}  r-vertical-field" 
+	data-signal-error-for="description{$id}" {$required_attr_description}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="description" data-fieldname="description" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_description}">
+		{BEGIN description_label}{$label Projets description }{END description_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$description_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="description" {$tooltipAttr Projets description } >
+		<div class="text-muted" >
+		{$tooltip Projets description }		</div>
+	</div>
+</div>
+
+
+{END description_fieldblock}
+											
+{BEGIN direction_responsable_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_direction_responsable}  r-vertical-field" 
+	data-signal-error-for="direction_responsable{$id}" {$required_attr_direction_responsable}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="direction_responsable" data-fieldname="direction_responsable" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_direction_responsable}">
+		{BEGIN direction_responsable_label}{$label Projets direction_responsable }{END direction_responsable_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$direction_responsable_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="direction_responsable" {$tooltipAttr Projets direction_responsable } >
+		<div class="text-muted" >
+		{$tooltip Projets direction_responsable }		</div>
+	</div>
+</div>
+
+
+{END direction_responsable_fieldblock}
+											
+{BEGIN id_programme_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_programme}  r-vertical-field" 
+	data-signal-error-for="id_programme{$id}" {$required_attr_id_programme}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="id_programme" data-fieldname="id_programme" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_programme}">
+		{BEGIN id_programme_label}{$label Projets id_programme }{END id_programme_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$id_programme_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_programme" {$tooltipAttr Projets id_programme } >
+		<div class="text-muted" >
+		{$tooltip Projets id_programme }		</div>
+	</div>
+</div>
+
+
+{END id_programme_fieldblock}
+											
+{BEGIN localisation_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_localisation}  r-vertical-field" 
+	data-signal-error-for="localisation{$id}" {$required_attr_localisation}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="localisation" data-fieldname="localisation" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_localisation}">
+		{BEGIN localisation_label}{$label Projets localisation }{END localisation_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$localisation_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="localisation" {$tooltipAttr Projets localisation } >
+		<div class="text-muted" >
+		{$tooltip Projets localisation }		</div>
+	</div>
+</div>
+
+
+{END localisation_fieldblock}
+											
+{BEGIN niveau_maturite_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_niveau_maturite}  r-vertical-field" 
+	data-signal-error-for="niveau_maturite{$id}" {$required_attr_niveau_maturite}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="niveau_maturite" data-fieldname="niveau_maturite" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_niveau_maturite}">
+		{BEGIN niveau_maturite_label}{$label Projets niveau_maturite }{END niveau_maturite_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$niveau_maturite_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="niveau_maturite" {$tooltipAttr Projets niveau_maturite } >
+		<div class="text-muted" >
+		{$tooltip Projets niveau_maturite }		</div>
+	</div>
+</div>
+
+
+{END niveau_maturite_fieldblock}
+											
+{BEGIN nom_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nom}  r-vertical-field" 
+	data-signal-error-for="nom{$id}" {$required_attr_nom}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="nom" data-fieldname="nom" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_nom}">
+		{BEGIN nom_label}{$label Projets nom }{END nom_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$nom_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nom" {$tooltipAttr Projets nom } >
+		<div class="text-muted" >
+		{$tooltip Projets nom }		</div>
+	</div>
+</div>
+
+
+{END nom_fieldblock}
+											
+{BEGIN objectif_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_objectif}  r-vertical-field" 
+	data-signal-error-for="objectif{$id}" {$required_attr_objectif}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="objectif" data-fieldname="objectif" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_objectif}">
+		{BEGIN objectif_label}{$label Projets objectif }{END objectif_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$objectif_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="objectif" {$tooltipAttr Projets objectif } >
+		<div class="text-muted" >
+		{$tooltip Projets objectif }		</div>
+	</div>
+</div>
+
+
+{END objectif_fieldblock}
+											
+{BEGIN statut_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_statut}  r-vertical-field" 
+	data-signal-error-for="statut{$id}" {$required_attr_statut}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="statut" data-fieldname="statut" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_statut}">
+		{BEGIN statut_label}{$label Projets statut }{END statut_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$statut_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="statut" {$tooltipAttr Projets statut } >
+		<div class="text-muted" >
+		{$tooltip Projets statut }		</div>
+	</div>
+</div>
+
+
+{END statut_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Sauvegarder			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Retour à la liste			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Annuler			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Remettre		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="projets_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		Afficher		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

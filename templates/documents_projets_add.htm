@@ -1,0 +1,299 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-add" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel Documents_projets add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Retour à la liste</button>
+	{END message_back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Afficher</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Editer</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN auteur_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_auteur_id}  r-vertical-field" 
+	data-signal-error-for="auteur_id{$id}" {$required_attr_auteur_id}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="auteur_id" data-fieldname="auteur_id" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_auteur_id}">
+		{BEGIN auteur_id_label}{$label Documents_projets auteur_id }{END auteur_id_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$auteur_id_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="auteur_id" {$tooltipAttr Documents_projets auteur_id } >
+		<div class="text-muted" >
+		{$tooltip Documents_projets auteur_id }		</div>
+	</div>
+</div>
+
+
+{END auteur_id_fieldblock}
+											
+{BEGIN chemin_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_chemin}  r-vertical-field" 
+	data-signal-error-for="chemin{$id}" {$required_attr_chemin}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="chemin" data-fieldname="chemin" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_chemin}">
+		{BEGIN chemin_label}{$label Documents_projets chemin }{END chemin_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$chemin_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="chemin" {$tooltipAttr Documents_projets chemin } >
+		<div class="text-muted" >
+		{$tooltip Documents_projets chemin }		</div>
+	</div>
+</div>
+
+
+{END chemin_fieldblock}
+											
+{BEGIN date_ajout_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_ajout}  r-vertical-field" 
+	data-signal-error-for="date_ajout{$id}" {$required_attr_date_ajout}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="date_ajout" data-fieldname="date_ajout" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_date_ajout}">
+		{BEGIN date_ajout_label}{$label Documents_projets date_ajout }{END date_ajout_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$date_ajout_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="date_ajout" {$tooltipAttr Documents_projets date_ajout } >
+		<div class="text-muted" >
+		{$tooltip Documents_projets date_ajout }		</div>
+	</div>
+</div>
+
+
+{END date_ajout_fieldblock}
+											
+{BEGIN id_projet_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_projet}  r-vertical-field" 
+	data-signal-error-for="id_projet{$id}" {$required_attr_id_projet}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="id_projet" data-fieldname="id_projet" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_projet}">
+		{BEGIN id_projet_label}{$label Documents_projets id_projet }{END id_projet_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$id_projet_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_projet" {$tooltipAttr Documents_projets id_projet } >
+		<div class="text-muted" >
+		{$tooltip Documents_projets id_projet }		</div>
+	</div>
+</div>
+
+
+{END id_projet_fieldblock}
+											
+{BEGIN nom_fichier_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nom_fichier}  r-vertical-field" 
+	data-signal-error-for="nom_fichier{$id}" {$required_attr_nom_fichier}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="nom_fichier" data-fieldname="nom_fichier" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_nom_fichier}">
+		{BEGIN nom_fichier_label}{$label Documents_projets nom_fichier }{END nom_fichier_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$nom_fichier_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nom_fichier" {$tooltipAttr Documents_projets nom_fichier } >
+		<div class="text-muted" >
+		{$tooltip Documents_projets nom_fichier }		</div>
+	</div>
+</div>
+
+
+{END nom_fichier_fieldblock}
+											
+{BEGIN type_document_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_type_document}  r-vertical-field" 
+	data-signal-error-for="type_document{$id}" {$required_attr_type_document}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="type_document" data-fieldname="type_document" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_type_document}">
+		{BEGIN type_document_label}{$label Documents_projets type_document }{END type_document_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$type_document_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="type_document" {$tooltipAttr Documents_projets type_document } >
+		<div class="text-muted" >
+		{$tooltip Documents_projets type_document }		</div>
+	</div>
+</div>
+
+
+{END type_document_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Sauvegarder			</a>
+</span>
+	 
+		<span data-itemtype="add_reset" data-itemid="add_reset" {$item_add_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="resetButton{$id}" >
+							Remettre			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Retour à la liste			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Annuler			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,428 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel Projets view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN categorie_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_categorie}  r-vertical-field" data-fieldname="categorie" data-signal-error-for="categorie{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="categorie" data-fieldname="categorie" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_categorie}">
+		
+		{BEGIN categorie_label}{$label Projets categorie }{END categorie_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$categorie_value}	</div>
+
+		
+</div>
+
+
+{END categorie_fieldblock}
+											
+{BEGIN chef_projet_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_chef_projet_id}  r-vertical-field" data-fieldname="chef_projet_id" data-signal-error-for="chef_projet_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="chef_projet_id" data-fieldname="chef_projet_id" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_chef_projet_id}">
+		
+		{BEGIN chef_projet_id_label}{$label Projets chef_projet_id }{END chef_projet_id_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$chef_projet_id_value}	</div>
+
+		
+</div>
+
+
+{END chef_projet_id_fieldblock}
+											
+{BEGIN code_projet_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_code_projet}  r-vertical-field" data-fieldname="code_projet" data-signal-error-for="code_projet{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="code_projet" data-fieldname="code_projet" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_code_projet}">
+		
+		{BEGIN code_projet_label}{$label Projets code_projet }{END code_projet_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$code_projet_value}	</div>
+
+		
+</div>
+
+
+{END code_projet_fieldblock}
+											
+{BEGIN date_debut_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_debut}  r-vertical-field" data-fieldname="date_debut" data-signal-error-for="date_debut{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="date_debut" data-fieldname="date_debut" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_date_debut}">
+		
+		{BEGIN date_debut_label}{$label Projets date_debut }{END date_debut_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$date_debut_value}	</div>
+
+		
+</div>
+
+
+{END date_debut_fieldblock}
+											
+{BEGIN date_fin_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_fin}  r-vertical-field" data-fieldname="date_fin" data-signal-error-for="date_fin{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="date_fin" data-fieldname="date_fin" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_date_fin}">
+		
+		{BEGIN date_fin_label}{$label Projets date_fin }{END date_fin_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$date_fin_value}	</div>
+
+		
+</div>
+
+
+{END date_fin_fieldblock}
+											
+{BEGIN description_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_description}  r-vertical-field" data-fieldname="description" data-signal-error-for="description{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="description" data-fieldname="description" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_description}">
+		
+		{BEGIN description_label}{$label Projets description }{END description_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$description_value}	</div>
+
+		
+</div>
+
+
+{END description_fieldblock}
+											
+{BEGIN direction_responsable_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_direction_responsable}  r-vertical-field" data-fieldname="direction_responsable" data-signal-error-for="direction_responsable{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="direction_responsable" data-fieldname="direction_responsable" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_direction_responsable}">
+		
+		{BEGIN direction_responsable_label}{$label Projets direction_responsable }{END direction_responsable_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$direction_responsable_value}	</div>
+
+		
+</div>
+
+
+{END direction_responsable_fieldblock}
+											
+{BEGIN id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-vertical-field" data-fieldname="id" data-signal-error-for="id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="id" data-fieldname="id" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id}">
+		
+		{BEGIN id_label}{$label Projets id }{END id_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_value}	</div>
+
+		
+</div>
+
+
+{END id_fieldblock}
+											
+{BEGIN id_programme_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_programme}  r-vertical-field" data-fieldname="id_programme" data-signal-error-for="id_programme{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="id_programme" data-fieldname="id_programme" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_programme}">
+		
+		{BEGIN id_programme_label}{$label Projets id_programme }{END id_programme_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_programme_value}	</div>
+
+		
+</div>
+
+
+{END id_programme_fieldblock}
+											
+{BEGIN localisation_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_localisation}  r-vertical-field" data-fieldname="localisation" data-signal-error-for="localisation{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="localisation" data-fieldname="localisation" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_localisation}">
+		
+		{BEGIN localisation_label}{$label Projets localisation }{END localisation_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$localisation_value}	</div>
+
+		
+</div>
+
+
+{END localisation_fieldblock}
+											
+{BEGIN niveau_maturite_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_niveau_maturite}  r-vertical-field" data-fieldname="niveau_maturite" data-signal-error-for="niveau_maturite{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="niveau_maturite" data-fieldname="niveau_maturite" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_niveau_maturite}">
+		
+		{BEGIN niveau_maturite_label}{$label Projets niveau_maturite }{END niveau_maturite_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$niveau_maturite_value}	</div>
+
+		
+</div>
+
+
+{END niveau_maturite_fieldblock}
+											
+{BEGIN nom_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nom}  r-vertical-field" data-fieldname="nom" data-signal-error-for="nom{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="nom" data-fieldname="nom" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_nom}">
+		
+		{BEGIN nom_label}{$label Projets nom }{END nom_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$nom_value}	</div>
+
+		
+</div>
+
+
+{END nom_fieldblock}
+											
+{BEGIN objectif_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_objectif}  r-vertical-field" data-fieldname="objectif" data-signal-error-for="objectif{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="objectif" data-fieldname="objectif" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_objectif}">
+		
+		{BEGIN objectif_label}{$label Projets objectif }{END objectif_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$objectif_value}	</div>
+
+		
+</div>
+
+
+{END objectif_fieldblock}
+											
+{BEGIN statut_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_statut}  r-vertical-field" data-fieldname="statut" data-signal-error-for="statut{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="statut" data-fieldname="statut" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_statut}">
+		
+		{BEGIN statut_label}{$label Projets statut }{END statut_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$statut_value}	</div>
+
+		
+</div>
+
+
+{END statut_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Retour à la liste			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Fermer fenêtre			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="projets_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Editer		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
