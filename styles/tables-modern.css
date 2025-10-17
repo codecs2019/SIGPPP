@@ -1,0 +1,503 @@
+/*
+ * Modern Tables Styling for SIGPPP - Data Grids Only
+ * Focus on clean, readable data tables without touching navigation
+ */
+
+/* ========================================
+   TABLE CONTAINERS
+   ======================================== */
+
+/* Main table container */
+.table-responsive,
+.grid-container,
+[data-table],
+.rnr-gridtable {
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 0;
+  margin: 16px 0;
+  overflow: hidden;
+}
+
+/* ========================================
+   TABLE HEADERS
+   ======================================== */
+
+/* Main table styling */
+table.table,
+table[data-table],
+.grid table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+}
+
+/* Table header row */
+table thead tr,
+table.table thead tr {
+  background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
+  border-bottom: 2px solid #E2E8F0;
+}
+
+/* Table header cells */
+table thead th,
+table.table thead th {
+  padding: 16px 12px !important;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #475569 !important;
+  text-align: left;
+  border-bottom: 2px solid #CBD5E1;
+  background: transparent;
+  position: relative;
+}
+
+/* First header cell */
+table thead th:first-child {
+  padding-left: 20px !important;
+  border-top-left-radius: 12px;
+}
+
+/* Last header cell */
+table thead th:last-child {
+  padding-right: 20px !important;
+  border-top-right-radius: 12px;
+}
+
+/* ========================================
+   TABLE BODY ROWS
+   ======================================== */
+
+/* Table body rows */
+table tbody tr,
+table.table tbody tr {
+  border-bottom: 1px solid #F1F5F9;
+  transition: all 0.2s ease;
+  background: #FFFFFF;
+}
+
+/* Alternating row colors */
+table tbody tr:nth-child(even),
+table.table tbody tr:nth-child(even) {
+  background: #FAFBFC;
+}
+
+/* Hover effect */
+table tbody tr:hover,
+table.table tbody tr:hover {
+  background: #F0F9FF !important;
+  transform: scale(1.001);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.08);
+  position: relative;
+  z-index: 1;
+}
+
+/* ========================================
+   TABLE CELLS
+   ======================================== */
+
+/* Table data cells */
+table tbody td,
+table.table tbody td {
+  padding: 14px 12px !important;
+  color: #334155;
+  vertical-align: middle;
+  border: none;
+}
+
+/* First cell in row */
+table tbody td:first-child {
+  padding-left: 20px !important;
+  font-weight: 500;
+}
+
+/* Last cell in row */
+table tbody td:last-child {
+  padding-right: 20px !important;
+}
+
+/* ========================================
+   ACTION BUTTONS IN TABLES
+   ======================================== */
+
+/* Action icons/buttons container */
+table tbody td .btn-group,
+table tbody td .action-buttons,
+table tbody td [data-icons] {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+
+/* Individual action buttons */
+table tbody td .btn-sm,
+table tbody td .btn-xs,
+table tbody td a.btn {
+  padding: 6px 12px !important;
+  border-radius: 6px !important;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: 1px solid #E2E8F0;
+  background: #FFFFFF;
+  color: #64748B;
+  text-decoration: none;
+}
+
+table tbody td .btn-sm:hover,
+table tbody td .btn-xs:hover,
+table tbody td a.btn:hover {
+  background: #3B82F6;
+  color: #FFFFFF;
+  border-color: #3B82F6;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+/* Icon-only buttons */
+table tbody td .btn .glyphicon,
+table tbody td .btn .fa {
+  font-size: 13px;
+}
+
+/* Edit button - Blue */
+table tbody td .btn-primary,
+table tbody td a[href*="edit"] {
+  background: #3B82F6;
+  border-color: #3B82F6;
+  color: #FFFFFF;
+}
+
+table tbody td .btn-primary:hover,
+table tbody td a[href*="edit"]:hover {
+  background: #2563EB;
+  border-color: #2563EB;
+}
+
+/* Delete button - Red */
+table tbody td .btn-danger,
+table tbody td a[href*="delete"] {
+  background: #EF4444;
+  border-color: #EF4444;
+  color: #FFFFFF;
+}
+
+table tbody td .btn-danger:hover,
+table tbody td a[href*="delete"]:hover {
+  background: #DC2626;
+  border-color: #DC2626;
+}
+
+/* View button - Green */
+table tbody td .btn-success,
+table tbody td a[href*="view"] {
+  background: #10B981;
+  border-color: #10B981;
+  color: #FFFFFF;
+}
+
+table tbody td .btn-success:hover,
+table tbody td a[href*="view"]:hover {
+  background: #059669;
+  border-color: #059669;
+}
+
+/* ========================================
+   TABLE PAGINATION
+   ======================================== */
+
+/* Pagination container */
+.pagination {
+  display: flex;
+  gap: 6px;
+  padding: 16px 20px;
+  justify-content: center;
+  background: #FAFBFC;
+  border-top: 1px solid #E2E8F0;
+  margin: 0;
+  border-radius: 0 0 12px 12px;
+}
+
+/* Pagination items */
+.pagination li a,
+.pagination li span {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #E2E8F0;
+  background: #FFFFFF;
+  color: #64748B;
+  font-weight: 500;
+  font-size: 13px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.pagination li a:hover {
+  background: #3B82F6;
+  border-color: #3B82F6;
+  color: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+/* Active page */
+.pagination li.active a,
+.pagination li.active span {
+  background: #3B82F6;
+  border-color: #3B82F6;
+  color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+/* Disabled pagination items */
+.pagination li.disabled a,
+.pagination li.disabled span {
+  background: #F8FAFC;
+  color: #CBD5E1;
+  cursor: not-allowed;
+  border-color: #F1F5F9;
+}
+
+/* ========================================
+   TABLE SEARCH & FILTERS
+   ======================================== */
+
+/* Search input in table header */
+.table-search,
+input[type="search"] {
+  padding: 10px 16px;
+  border: 2px solid #E2E8F0;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  background: #FFFFFF;
+  width: 100%;
+  max-width: 300px;
+}
+
+.table-search:focus,
+input[type="search"]:focus {
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  outline: none;
+}
+
+/* ========================================
+   TABLE TOOLBAR
+   ======================================== */
+
+/* Toolbar above table */
+.table-toolbar,
+.grid-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: #FAFBFC;
+  border-bottom: 1px solid #E2E8F0;
+  border-radius: 12px 12px 0 0;
+}
+
+.table-toolbar .btn,
+.grid-toolbar .btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/* ========================================
+   BADGES & STATUS IN TABLES
+   ======================================== */
+
+/* Status badges */
+.badge,
+.label {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.badge-success,
+.label-success {
+  background: #D1FAE5;
+  color: #065F46;
+}
+
+.badge-warning,
+.label-warning {
+  background: #FEF3C7;
+  color: #92400E;
+}
+
+.badge-danger,
+.label-danger {
+  background: #FEE2E2;
+  color: #991B1B;
+}
+
+.badge-info,
+.label-info {
+  background: #DBEAFE;
+  color: #1E40AF;
+}
+
+.badge-primary,
+.label-primary {
+  background: #EFF6FF;
+  color: #1E40AF;
+}
+
+/* ========================================
+   CHECKBOXES IN TABLES
+   ======================================== */
+
+/* Table checkboxes */
+table tbody td input[type="checkbox"],
+table thead th input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #CBD5E1;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+table tbody td input[type="checkbox"]:checked,
+table thead th input[type="checkbox"]:checked {
+  background: #3B82F6;
+  border-color: #3B82F6;
+}
+
+/* ========================================
+   EMPTY STATE
+   ======================================== */
+
+.table-empty-state,
+.no-records {
+  text-align: center;
+  padding: 48px 20px;
+  color: #94A3B8;
+}
+
+.table-empty-state h3 {
+  font-size: 18px;
+  color: #64748B;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.table-empty-state p {
+  font-size: 14px;
+  color: #94A3B8;
+}
+
+/* ========================================
+   RESPONSIVE TABLES
+   ======================================== */
+
+@media (max-width: 768px) {
+  table thead th,
+  table tbody td {
+    padding: 10px 8px !important;
+    font-size: 13px;
+  }
+  
+  table thead th:first-child,
+  table tbody td:first-child {
+    padding-left: 12px !important;
+  }
+  
+  table thead th:last-child,
+  table tbody td:last-child {
+    padding-right: 12px !important;
+  }
+  
+  .table-toolbar {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  
+  .table-search {
+    max-width: 100%;
+  }
+}
+
+/* ========================================
+   LOADING STATE
+   ======================================== */
+
+.table-loading {
+  position: relative;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.table-loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  border: 4px solid #E2E8F0;
+  border-top-color: #3B82F6;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ========================================
+   SORTABLE COLUMNS
+   ======================================== */
+
+table thead th[data-sortable],
+table thead th.sortable {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  padding-right: 24px !important;
+}
+
+table thead th[data-sortable]:hover,
+table thead th.sortable:hover {
+  background: rgba(59, 130, 246, 0.05);
+  color: #3B82F6 !important;
+}
+
+/* Sort indicator */
+table thead th[data-sortable]::after,
+table thead th.sortable::after {
+  content: '⇅';
+  position: absolute;
+  right: 8px;
+  opacity: 0.3;
+  font-size: 14px;
+}
+
+table thead th[data-sortable].asc::after {
+  content: '↑';
+  opacity: 1;
+  color: #3B82F6;
+}
+
+table thead th[data-sortable].desc::after {
+  content: '↓';
+  opacity: 1;
+  color: #3B82F6;
+}
