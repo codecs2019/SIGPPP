@@ -1,0 +1,120 @@
+/*
+ * Modern Grid Layout for Welcome/Dashboard Page
+ * Creates a responsive card grid layout
+ */
+
+/* Modern Grid Container */
+.r-welcome-align {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+  max-width: 100%;
+}
+
+/* Ensure welcome items work well in the grid */
+.r-welcome-align .bs-welcome-item {
+  margin: 0 !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.r-welcome-align .bs-welcome-item .bs-welcome-header {
+  flex-shrink: 0;
+}
+
+.r-welcome-align .bs-welcome-item .bs-welcome-content {
+  flex-grow: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+  .r-welcome-align {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .r-welcome-align {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .r-welcome-align {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    padding: 16px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .r-welcome-align {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+/* Enhanced card hover effect for grid layout */
+.r-welcome-align .bs-welcome-item:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+/* Icon enhancements for welcome items */
+.bs-welcome-item .bs-welcome-header a::before {
+  content: "📊";
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+[data-itemid="welcome_item12"] .bs-welcome-header a::before { content: "💼"; }
+[data-itemid="welcome_item13"] .bs-welcome-header a::before { content: "📋"; }
+[data-itemid="welcome_item"] .bs-welcome-header a::before { content: "🎯"; }
+[data-itemid="welcome_item4"] .bs-welcome-header a::before { content: "📈"; }
+[data-itemid="welcome_item14"] .bs-welcome-header a::before { content: "👥"; }
+[data-itemid="welcome_item6"] .bs-welcome-header a::before { content: "✓"; }
+[data-itemid="welcome_item8"] .bs-welcome-header a::before { content: "💰"; }
+[data-itemid="welcome_item9"] .bs-welcome-header a::before { content: "💳"; }
+[data-itemid="welcome_item5"] .bs-welcome-header a::before { content: "📊"; }
+[data-itemid="welcome_item1"] .bs-welcome-header a::before { content: "⚡"; }
+[data-itemid="welcome_item2"] .bs-welcome-header a::before { content: "🎨"; }
+[data-itemid="welcome_item11"] .bs-welcome-header a::before { content: "📉"; }
+[data-itemid="welcome_item15"] .bs-welcome-header a::before { content: "📝"; }
+[data-itemid="welcome_item10"] .bs-welcome-header a::before { content: "📄"; }
+[data-itemid="welcome_item7"] .bs-welcome-header a::before { content: "📦"; }
+[data-itemid="welcome_item3"] .bs-welcome-header a::before { content: "🔄"; }
+[data-itemid="welcome_item16"] .bs-welcome-header a::before { content: "📊"; }
+
+/* Add subtle animation on page load */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.r-welcome-align .bs-welcome-item {
+  animation: slideInUp 0.6s ease-out backwards;
+}
+
+.r-welcome-align .bs-welcome-item:nth-child(1) { animation-delay: 0.05s; }
+.r-welcome-align .bs-welcome-item:nth-child(2) { animation-delay: 0.1s; }
+.r-welcome-align .bs-welcome-item:nth-child(3) { animation-delay: 0.15s; }
+.r-welcome-align .bs-welcome-item:nth-child(4) { animation-delay: 0.2s; }
+.r-welcome-align .bs-welcome-item:nth-child(5) { animation-delay: 0.25s; }
+.r-welcome-align .bs-welcome-item:nth-child(6) { animation-delay: 0.3s; }
+.r-welcome-align .bs-welcome-item:nth-child(7) { animation-delay: 0.35s; }
+.r-welcome-align .bs-welcome-item:nth-child(8) { animation-delay: 0.4s; }
+.r-welcome-align .bs-welcome-item:nth-child(9) { animation-delay: 0.45s; }
+.r-welcome-align .bs-welcome-item:nth-child(10) { animation-delay: 0.5s; }
+.r-welcome-align .bs-welcome-item:nth-child(11) { animation-delay: 0.55s; }
+.r-welcome-align .bs-welcome-item:nth-child(12) { animation-delay: 0.6s; }
+.r-welcome-align .bs-welcome-item:nth-child(n+13) { animation-delay: 0.65s; }
