@@ -27,192 +27,230 @@
 }
 
 /* ========================================
-   KPI CARDS MODERNIZATION
+   KPI CARDS MODERNIZATION - STYLE CLAIR
    ======================================== */
 
-/* Base KPI card styling */
+/* Base KPI card styling - Clean & Simple */
 .r-grid td > div[data-dashtype="0"] {
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%) !important;
-  border-radius: 16px !important;
-  padding: 28px 24px !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  background: #FFFFFF !important;
+  border-radius: 20px !important;
+  padding: 32px 28px !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
+  transition: all 0.3s ease !important;
   text-align: center;
   position: relative;
-  overflow: hidden;
-  border: 1px solid rgba(74, 144, 226, 0.1) !important;
-  min-height: 180px;
+  overflow: visible;
+  border: 2px solid #F3F4F6 !important;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 12px;
 }
 
-/* Decorative gradient overlay */
+/* Simple icon circle at top */
 .r-grid td > div[data-dashtype="0"]::before {
-  content: '';
+  content: '📊';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 6px;
-  background: linear-gradient(90deg, #4A90E2, #50C878);
-  opacity: 0.8;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 56px;
+  height: 56px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border: 3px solid #F9FAFB;
 }
 
-/* Hover effect */
+/* Hover effect - Simple elevation */
 .r-grid td > div[data-dashtype="0"]:hover {
-  transform: translateY(-8px) scale(1.02) !important;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15) !important;
-  border-color: rgba(74, 144, 226, 0.3) !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
+  border-color: #E5E7EB !important;
 }
 
-/* KPI Title */
+/* KPI Title - Clean and readable */
 .r-grid td > div[data-dashtype="0"] h3,
 .r-grid td > div[data-dashtype="0"] .kpi-title,
 .r-grid td > div[data-dashtype="0"] > div:first-child {
-  font-size: 13px !important;
+  font-size: 14px !important;
   font-weight: 600 !important;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  text-transform: none;
+  letter-spacing: 0;
   color: #6B7280 !important;
-  margin-bottom: 16px !important;
-  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+  margin-top: 24px !important;
+  line-height: 1.5;
 }
 
-/* KPI Value */
+/* KPI Value - Large and clear */
 .r-grid td > div[data-dashtype="0"] .kpi-value,
 .r-grid td > div[data-dashtype="0"] > div:nth-child(2) {
-  font-size: 3rem !important;
-  font-weight: 800 !important;
+  font-size: 3.5rem !important;
+  font-weight: 700 !important;
   color: #1F2937 !important;
-  margin-bottom: 12px !important;
-  line-height: 1.2;
-  background: linear-gradient(135deg, #1F2937, #4A90E2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  margin-bottom: 8px !important;
+  line-height: 1;
 }
 
-/* KPI Meta info */
+/* KPI Meta info - Subtle */
 .r-grid td > div[data-dashtype="0"] .kpi-meta,
 .r-grid td > div[data-dashtype="0"] > div:nth-child(3) {
-  font-size: 12px !important;
+  font-size: 13px !important;
   color: #9CA3AF !important;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* ========================================
-   COLOR VARIATIONS FOR DIFFERENT KPI TYPES
+   COLOR VARIATIONS - STYLE CLAIR ET SIMPLE
    ======================================== */
 
 /* Projects in progress - Blue */
 #dashelement_kpi_ProjetsEnCours_grid1,
 #dashelement_kpi_ProjetsEnCours_grid {
-  border-top: 6px solid #3B82F6 !important;
+  border-color: #DBEAFE !important;
+  background: linear-gradient(to bottom, #FFFFFF, #F0F9FF) !important;
 }
 #dashelement_kpi_ProjetsEnCours_grid1::before,
 #dashelement_kpi_ProjetsEnCours_grid::before {
-  background: linear-gradient(90deg, #3B82F6, #2563EB) !important;
+  content: '📊';
+  background: linear-gradient(135deg, #3B82F6, #60A5FA) !important;
+  color: white;
 }
 
 /* Activities in progress - Green */
 #dashelement_kpi_ActivitesEnCours_grid1,
 #dashelement_kpi_ActivitesEnCours_grid {
-  border-top: 6px solid #10B981 !important;
+  border-color: #D1FAE5 !important;
+  background: linear-gradient(to bottom, #FFFFFF, #F0FDF4) !important;
 }
 #dashelement_kpi_ActivitesEnCours_grid1::before,
 #dashelement_kpi_ActivitesEnCours_grid::before {
-  background: linear-gradient(90deg, #10B981, #059669) !important;
+  content: '✓';
+  background: linear-gradient(135deg, #10B981, #34D399) !important;
+  color: white;
 }
 
 /* Late projects - Red */
 #dashelement_kpi_projets_en_retard_grid1,
 #dashelement_kpi_projets_en_retard_grid {
-  border-top: 6px solid #EF4444 !important;
+  border-color: #FEE2E2 !important;
+  background: linear-gradient(to bottom, #FFFFFF, #FEF2F2) !important;
 }
 #dashelement_kpi_projets_en_retard_grid1::before,
 #dashelement_kpi_projets_en_retard_grid::before {
-  background: linear-gradient(90deg, #EF4444, #DC2626) !important;
+  content: '⏰';
+  background: linear-gradient(135deg, #EF4444, #F87171) !important;
+  color: white;
 }
 
 /* Budget execution rate - Orange */
 #dashelement_kpi_taux_execution_budgetaire_grid1,
 #dashelement_kpi_taux_execution_budgetaire_grid {
-  border-top: 6px solid #F59E0B !important;
+  border-color: #FED7AA !important;
+  background: linear-gradient(to bottom, #FFFFFF, #FFFBEB) !important;
 }
 #dashelement_kpi_taux_execution_budgetaire_grid1::before,
 #dashelement_kpi_taux_execution_budgetaire_grid::before {
-  background: linear-gradient(90deg, #F59E0B, #D97706) !important;
+  content: '📈';
+  background: linear-gradient(135deg, #F59E0B, #FBBF24) !important;
+  color: white;
 }
 
 /* Completed projects - Light Green */
 #dashelement_kpi_projets_termines_grid1,
 #dashelement_kpi_projets_termines_grid {
-  border-top: 6px solid #22C55E !important;
+  border-color: #BBF7D0 !important;
+  background: linear-gradient(to bottom, #FFFFFF, #F0FDF4) !important;
 }
 #dashelement_kpi_projets_termines_grid1::before,
 #dashelement_kpi_projets_termines_grid::before {
-  background: linear-gradient(90deg, #22C55E, #16A34A) !important;
+  content: '✅';
+  background: linear-gradient(135deg, #22C55E, #4ADE80) !important;
+  color: white;
 }
 
 /* Completed activities - Dark Green */
 #dashelement_kpi_activites_terminees_grid1,
 #dashelement_kpi_activites_terminees_grid {
-  border-top: 6px solid #16A34A !important;
+  border-color: #A7F3D0 !important;
+  background: linear-gradient(to bottom, #FFFFFF, #ECFDF5) !important;
 }
 #dashelement_kpi_activites_terminees_grid1::before,
 #dashelement_kpi_activites_terminees_grid::before {
-  background: linear-gradient(90deg, #16A34A, #15803D) !important;
+  content: '🎯';
+  background: linear-gradient(135deg, #16A34A, #22C55E) !important;
+  color: white;
 }
 
 /* Late activities - Dark Red */
 #dashelement_kpi_activites_en_retard_grid1,
 #dashelement_kpi_activites_en_retard_grid {
-  border-top: 6px solid #DC2626 !important;
+  border-color: #FECACA !important;
+  background: linear-gradient(to bottom, #FFFFFF, #FEF2F2) !important;
 }
 #dashelement_kpi_activites_en_retard_grid1::before,
 #dashelement_kpi_activites_en_retard_grid::before {
-  background: linear-gradient(90deg, #DC2626, #B91C1C) !important;
+  content: '⚠️';
+  background: linear-gradient(135deg, #DC2626, #EF4444) !important;
+  color: white;
 }
 
 /* Projects over budget - Yellow */
 #dashelement_kpi_projets_depassement_budget_grid1,
 #dashelement_kpi_projets_depassement_budget_grid {
-  border-top: 6px solid #EAB308 !important;
+  border-color: #FEF08A !important;
+  background: linear-gradient(to bottom, #FFFFFF, #FEFCE8) !important;
 }
 #dashelement_kpi_projets_depassement_budget_grid1::before,
 #dashelement_kpi_projets_depassement_budget_grid::before {
-  background: linear-gradient(90deg, #EAB308, #CA8A04) !important;
+  content: '💰';
+  background: linear-gradient(135deg, #EAB308, #FCD34D) !important;
+  color: white;
 }
 
 /* Global budget - Indigo */
 #dashelement_kpi_BudgetGlobal_grid1,
 #dashelement_kpi_BudgetGlobal_grid {
-  border-top: 6px solid #6366F1 !important;
+  border-color: #E0E7FF !important;
+  background: linear-gradient(to bottom, #FFFFFF, #F5F3FF) !important;
 }
 #dashelement_kpi_BudgetGlobal_grid1::before,
 #dashelement_kpi_BudgetGlobal_grid::before {
-  background: linear-gradient(90deg, #6366F1, #4F46E5) !important;
+  content: '💵';
+  background: linear-gradient(135deg, #6366F1, #818CF8) !important;
+  color: white;
 }
 
 /* Realized expenses - Cyan */
 #dashelement_kpi_depenses_realisees_grid1,
 #dashelement_kpi_depenses_realisees_grid {
-  border-top: 6px solid #06B6D4 !important;
+  border-color: #CFFAFE !important;
+  background: linear-gradient(to bottom, #FFFFFF, #F0FDFA) !important;
 }
 #dashelement_kpi_depenses_realisees_grid1::before,
 #dashelement_kpi_depenses_realisees_grid::before {
-  background: linear-gradient(90deg, #06B6D4, #0891B2) !important;
+  content: '💳';
+  background: linear-gradient(135deg, #06B6D4, #22D3EE) !important;
+  color: white;
 }
 
 /* Remaining budget - Sky Blue */
 #dashelement_kpi_budget_restant_grid1,
 #dashelement_kpi_budget_restant_grid {
-  border-top: 6px solid #0EA5E9 !important;
+  border-color: #BAE6FD !important;
+  background: linear-gradient(to bottom, #FFFFFF, #F0F9FF) !important;
 }
 #dashelement_kpi_budget_restant_grid1::before,
 #dashelement_kpi_budget_restant_grid::before {
-  background: linear-gradient(90deg, #0EA5E9, #0284C7) !important;
+  content: '🏦';
+  background: linear-gradient(135deg, #0EA5E9, #38BDF8) !important;
+  color: white;
 }
 
 /* ========================================
